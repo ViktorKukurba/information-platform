@@ -1,0 +1,21 @@
+<h2>Weather</h2>
+<section class="selection-list">
+<div class="cities" ng-app >
+    <h4>Cities</h4>
+        <ul>
+            <li data-ng-repeat="c in cities"> {{c}}</li>
+        </ul>
+</div>
+</section>
+<article class="section-content">
+<div class="weather-content">
+
+        <h4> {{city}} weather</h4>
+        <div>
+            Description: {{weather.description || weather.main}}
+        </div>
+        <div>
+            Wind speed: {{wind.speed}}
+        </div>
+</div>
+</article>

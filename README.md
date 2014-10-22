@@ -1,8 +1,13 @@
-# angular-seed — the seed for AngularJS apps
+# Information Platform — based on the seed for AngularJS apps.
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+This project uses an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
+https://github.com/angular/angular-seed.
+
+This project is used to study AngularJS.
+
+Next services are used:
+[Feedzilla News](https://code.google.com/p/feedzilla-api/)
+[Open weather map API](http://openweathermap.org/)
 
 The seed contains a sample AngularJS application and is preconfigured to install the Angular
 framework and a bunch of development and testing tools for instant web development gratification.
@@ -22,7 +27,7 @@ You need git to clone the angular-seed repository. You can get git from
 We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-seed
+### Clone application
 
 Clone the angular-seed repository using [git][git]:
 
@@ -66,37 +71,6 @@ npm start
 
 Now browse to the app at `http://localhost:8000/app/index.html`.
 
-
-
-## Directory Layout
-
-```
-app/                    --> all of the source files for the application
-  app.css               --> default stylesheet
-  components/           --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
-  view1/                --> the view1 view template and logic
-    view1.html            --> the partial template
-    weather.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
-    view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
-  app.js                --> main application module
-  index.html            --> app layout file (the main html template file of the app)
-  index-async.html      --> just like index.html, but loads js files asynchronously
-karma.conf.js         --> config file for running unit tests with Karma
-e2e-tests/            --> end-to-end tests
-  protractor-conf.js    --> Protractor config file
-  scenarios.js          --> end-to-end scenarios to be run by Protractor
-```
 
 ## Testing
 
@@ -263,27 +237,5 @@ tests when you push to GitHub.
 You will need to enable the integration between Travis and GitHub. See the Travis website for more
 instruction on how to do this.
 
-### CloudBees
-
-CloudBees have provided a CI/deployment setup:
-
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/angular-js-clickstart/master/clickstart.json">
-<img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
-
 If you run this, you will get a cloned version of this repo to start working on in a private git repo,
 along with a CI service (in Jenkins) hosted that will run unit and end to end tests in both Firefox and Chrome.
-
-
-## Contact
-
-For more information on AngularJS please check out http://angularjs.org/
-
-[git]: http://git-scm.com/
-[bower]: http://bower.io
-[npm]: https://www.npmjs.org/
-[node]: http://nodejs.org
-[protractor]: https://github.com/angular/protractor
-[jasmine]: http://jasmine.github.io
-[karma]: http://karma-runner.github.io
-[travis]: https://travis-ci.org/
-[http-server]: https://github.com/nodeapps/http-server

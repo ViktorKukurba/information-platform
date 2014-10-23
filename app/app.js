@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.about',
   'myApp.weather',
+  'myApp.gallery',
   'myApp.news',
   'myApp.version'
 ]).
